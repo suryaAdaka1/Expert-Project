@@ -1,0 +1,203 @@
+[
+    {
+      "name": "ด้านมลพิษอากาศ",
+      "name2": "(เฉพาะด้านสุขภาพ)",
+      "labels": [
+        "ประเภทของการศึกษา (Type of study)",
+        "ผลกระทบต่อสุขภาพ (Health effect) Systemic disease",
+        "ผลกระทบต่อสุขภาพ (Health effect) Mechanism",
+        "ชนิดของมลพิษ (Pollutants)"
+      ],
+      "fields": ["Tab1OptionA", "Tab1OptionB", "Tab1OptionC", "Tab1OptionD"],
+      "options": {
+        "Tab1OptionA": [
+          "การวิเคราะห์มลพิษในอากาศและคุณภาพอากาศ (Air quality analysis)",
+          "การประเมินปริมาณการรับสัมผัส (Exposure assessment)",
+          "การวิเคราะห์ผลกระทบต่อสุขภาพ (Health impact assessment)",
+          "การศึกษาทางระบาดวิทยาของการสัมผัสมลพิษทางอากาศ (Epidemiology)"
+        ],
+        "Tab1OptionB": [
+          "Respiratory Tract diseases",
+          "Cardiovascular diseases",
+          "Neurological diseases",
+          "Reproductive disease",
+          "Immune system",
+          "Skin disease",
+          "Gastrointestinal tract",
+          "Endocrine system",
+          "Hematological disease",
+          "Cancer",
+          "Others"
+        ],
+        "Tab1OptionC": [
+          "Inflammation",
+          "Oxidative Stress",
+          "Genetic/Epigenetic mechanism",
+          "Cytotoxicity",
+          "Others"
+        ],
+        "Tab1OptionD": [
+          "Particulate Matter/Nanoparticle",
+          "Toxic Metals",
+          "VOCs",
+          "Persistent Organic Pollutants (POPs)",
+          "Microplastic/Nanoplastic",
+          "Tobacco smoke",
+          "PAHs",
+          "Ozone",
+          "Others"
+        ]
+      }
+    },
+    {
+      "name": "ด้านน้ำ",
+      "name2": "มลพิษทางน้ำและสุขาภิบาล",
+      "labels": [
+        "ประเภทของการศึกษา (Type of study)",
+        "ผลกระทบต่อสุขภาพ (Health effect) Systemic disease",
+        "ผลกระทบต่อสุขภาพ (Health effect) Mechanism",
+        "ชนิดของมลพิษ (Pollutants)"
+      ],
+      "fields": ["Tab2OptionA", "Tab2OptionB", "Tab2OptionC", "Tab2OptionD"],
+      "options": {
+        "Tab2OptionA": [
+          "การวิเคราะห์มลพิษและคุณภาพน้ำ",
+          "การจัดการและควบคุมมลพิษในแหล่งน้ำ",
+          "การประเมินผลกระทบของมลพิษต่อสุขภาพ (Chemical)",
+          "การประเมินผลกระทบของมลพิษต่อสุขภาพ (Biological)",
+          "การประเมินผลกระทบต่อสิ่งแวดล้อมและระบบนิเวศ",
+          "การจัดการและการบำบัดน้ำเสียชุมชน",
+          "การจัดการและการบำบัดน้ำเสียเกษตรกรรม",
+          "การจัดการและการบำบัดน้ำเสียโรงงานยาปฏิชีวนะ",
+          "นโยบายและกฎข้อบังคับ",
+          "การจัดการสุขาภิบาล"
+        ],
+        "Tab2OptionB": [
+          "Respiratory Tract diseases",
+          "Cardiovascular diseases",
+          "Neurological diseases",
+          "Reproductive disease",
+          "Immune system",
+          "Skin disease",
+          "Gastrointestinal tract",
+          "Endocrine system",
+          "Hematological disease",
+          "Cancer",
+          "Others"
+        ],
+        "Tab2OptionC": [
+          "Inflammation",
+          "Oxidative Stress",
+          "Genetic/Epigenetic mechanism",
+          "Cytotoxicity",
+          "Others"
+        ],
+        "Tab2OptionD": [
+          "Biological microorganisms",
+          "Microplastics/Nanoplastics",
+          "Radiological",
+          "Pharmaceuticals",
+          "Endocrine-Disrupting Chemicals (EDCs)",
+          "Toxic metals",
+          "Persistent Organic Pollutants (POPs)",
+          "Personal care products (PCPs)",
+          "Fertilizers",
+          "Others"
+        ]
+      }
+    },
+    {
+      "name": "ด้านสารเคมี",
+      "name2": "และของเสียอันตรายบางประเภท",
+      "labels": [
+        "ประเภทของการศึกษา (Type of study)",
+        "ผลกระทบต่อสุขภาพ (Health effect) Systemic disease",
+        "ผลกระทบต่อสุขภาพ (Health effect) Mechanism",
+        "ชนิดของมลพิษ (Pollutants)"
+      ],
+      "fields": ["Tab3OptionA", "Tab3OptionB", "Tab3OptionC", "Tab3OptionD"],
+      "options": {
+        "Tab3OptionA": [
+          "การจัดการขยะอิเล็กทรอนิกส์ และขยะประเภทโลหะหนักอันตราย",
+          "การจัดการขยะพลาสติก และไมโครพลาสติก",
+          "การบำบัดสารเคมีกลุ่มยากำจัดศัตรูพืช",
+          "การบำบัดสารเคมี และของเสียอันตราย",
+          "การใช้ประโยชน์จากของเสียอุตสาหกรรม และอื่น ๆ",
+          "การจัดการและการวิเคราะห์กลุ่มสารกมลพิษตกค้างยาวนาน (POPs) ตามรายงานอนุสัญญา",
+          "การประเมินผลกระทบต่อสุขภาพ",
+          "การศึกษากลไกความเป็นพิษ"
+        ],
+        "Tab3OptionB": [
+          "Respiratory Tract diseases",
+          "Cardiovascular diseases",
+          "Neurological diseases",
+          "Reproductive disease",
+          "Immune system",
+          "Skin disease",
+          "Gastrointestinal tract",
+          "Endocrine system",
+          "Hematological disease",
+          "Cancer",
+          "Others"
+        ],
+        "Tab3OptionC": [
+          "Inflammation",
+          "Oxidative Stress",
+          "Genetic/Epigenetic mechanism",
+          "Cytotoxicity",
+          "Others"
+        ],
+        "Tab3OptionD": [
+          "Endocrine-Disrupting Chemicals (EDCs)",
+          "Persistent Organic Pollutants (POPs)",
+          "Toxic metals",
+          "Agricultural Waste",
+          "Pesticides",
+          "Others"
+        ]
+      }
+    },
+    {
+      "name": "ด้านแนวทางการแก้ไขปัญหาสิ่งแวดล้อม: ",
+      "name2": "พัฒนาเทคโนโลยี",
+      "labels": [
+        "ประเภทของการศึกษา (Type of study)",
+        "ผลกระทบต่อสุขภาพ (Health effect) Systemic disease",
+        "ผลกระทบต่อสุขภาพ (Health effect) Mechanism",
+        "ชนิดของมลพิษ (Pollutants)"
+      ],
+      "fields": ["Tab4OptionA", "Tab4OptionB", "Tab4OptionC", "Tab4OptionD"],
+      "options": {
+        "Tab4OptionA": [
+          "เทคโนโลยีพลาสติกชีวภาพย่อยสลายได้/วัสดุชีวภาพ",
+          "เทคโนโลยีการแก้ปัญหาสิ่งแวดล้อม ในกระบวนการ Biorefinery",
+          "เทคโนโลยีการแก้ปัญหาสิ่งแวดล้อม ในอุตสาหกรรมก่อสร้าง",
+          "เทคโนโลยีการแก้ไขปัญหาสิ่งแวดล้อม ในทางวิศวกรรมการทาง",
+          "เทคโนโลยีการแก้ปัญหาสิ่งแวดล้อม ในทางกระบวนการผลิตก๊าซชีวภาพ และการดูดซับ ก๊าซเรือนกระจก"
+        ],
+        "Tab4OptionB": [
+          "Respiratory Tract diseases",
+          "Immune system",
+          "Liver system",
+          "Hematological disease",
+          "Others"
+        ],
+        "Tab4OptionC": [
+          "Inflammation",
+          "Oxidative Stress",
+          "Genetic/Epigenetic mechanism",
+          "Cytotoxicity",
+          "Others"
+        ],
+        "Tab4OptionD": [
+          "Heavy metals",
+          "Microplastics",
+          "Nanoplastics",
+          "Persistent Organic Pollutants (POPs)",
+          "Radioactive",
+          "Others"
+        ]
+      }
+    }
+  ]
+  

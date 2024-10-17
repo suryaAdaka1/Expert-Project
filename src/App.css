@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+/* In your custom CSS file or a <style> block */
+.line-between {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(50%);
+  width: calc(100% - 2rem); /* Calculate the line's width based on its container */
+  height: 1px;
+  background-color: gray; /* Default color */
+}
+
+.line-active {
+  background-color: #3b82f6; /* Tailwind's blue-500 color */
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+/* footer styling */
+/* Ensure the app container takes up the full viewport height */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* The form-background or main content area should grow to fill available space */
+.form-background {
+  background-color: #f0f4f8; /* Example background color */
+  flex-grow: 1; /* Allows this area to expand and push the footer down */
+}
+
+/* Ensure the footer sticks to the bottom when content is small */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+.loginMain{
+  margin: 1% 1%;
+  background: #F1F1FE;
+  border-radius: 20px;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+
+}
+.loginleftImage{
+  background-color: #072482;
+  max-width: 550px;
+  min-height: 650px;
+  padding: 140px 10px;
+  border-radius: 20px;
+  max-height: 650px;
+}
+
+.logintitles{
+  color: #4A4A4A;
+  padding:10px 0;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

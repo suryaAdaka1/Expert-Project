@@ -1,0 +1,226 @@
+/* .step-container {
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  }
+  
+  .step-enter {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+  .step-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .step-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .step-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+   */
+
+   
+
+  .logo {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    object-fit: cover; /* Ensure the image fits well in the circle */
+    margin-right: 20px;
+  }
+  
+  .rounded-full {
+    border-radius: 50%; /* Make the logo round */
+  }
+  
+  .border {
+    border: 2px solid #ccc; /* Adjust border color and width as needed */
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem; /* Add margin-bottom to separate the logo from the content below */
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem; /* Space between the number and label */
+  }
+  
+  .text-gray-700 {
+    color: #4a4a4a; /* Adjust text color as needed */
+  }
+  
+  /* Add this to MultiStepForm.css */
+
+.step-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem; /* Adjust spacing between steps */
+  }
+  
+  .step-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .step-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid;
+    font-size: 1rem;
+  }
+  
+  .step-label {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.875rem; /* Adjust font size for labels */
+  }
+  
+  .step-line {
+    height: 1px;
+    width: 2rem;
+    background-color: #d1d5db; /* Gray-300 */
+    margin: 0.5rem 0;
+  }
+  
+
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  
+  .tabs .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tabs .tab.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .tabs .tab.error {
+    border: 2px solid red;
+  }
+  
+  .tabs .tab.completed {
+    background-color: green;
+    color: white;
+  }
+  
+  /* General layout */
+.review-section {
+  max-width: 80rem;
+  width: 100%;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.review-section h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.review-section .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+
+
+@media (min-width: 600px) {
+  .review-section .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  
+}
+
+@media(max-width: 600px){
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    flex-direction: column;
+  }
+
+}
+
+.review-section p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.review-section p strong {
+  flex-basis: 40%;
+  text-align: right;
+  margin-right: 1rem;
+  font-size:14px;
+}
+
+.review-section p .value-box {
+  flex-basis: 50%;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #6b7280; /* Gray color */
+  border-radius: 4px;
+  font-size:12px;
+}
+
+/* Additional styling for section headers */
+.review-section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.review-section h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.grid {
+  display: grid;
+
+  gap: 16px;
+}
+
+.tab-section {
+  margin-bottom: 24px;
+}
+
+.value-box {
+  display: block;
+  padding: 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.text-center {
+  text-align: center;
+}

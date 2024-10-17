@@ -1,0 +1,395 @@
+/* Base styles for Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 5%;
+    background-color: white;
+    color: #082D9A;
+    z-index: 1000;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .menu-button {
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav-links-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    max-width: 800px;
+    
+  }
+  
+  .nav-links-container button {
+    background: none;
+    border: none;
+    color: #082D9A;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .nav-links-container button.active {
+    color: #082D9A;
+    font-weight: 800;
+  }
+  
+  .login-button {
+    background-color: #082D9A;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;  /* Makes the button rounded */
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .login-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .pagination-container {
+    display: inline-block; /* To wrap the pagination in a single block */
+    padding: 0px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Single box shadow for the entire pagination */
+    border-radius: 8px;
+  }
+  
+  .pagination button {
+    background-color: white;
+    border: none;
+    margin: 0 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination button.active {
+    background-color: blue;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.3); /* Blue shadow for the active button */
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pagination span {
+    margin: 0 5px;
+    font-size: 16px;
+    color: gray;
+  }
+  
+
+  /*grid info for home page*/
+
+  .MainHomegrid{
+    display: 'grid';
+    gap: '20px 20px';
+    grid-template-columns: 'repeat(4, 1fr)';
+  }
+
+
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .menu-button {
+      display: block;
+    }
+  
+    .nav-links-container {
+      display: none;  /* Hide nav links by default */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust if needed */
+      left: 0;
+      background-color: white;
+      width: 100%;
+      padding: 10px;
+      justify-content: center;
+    }
+  
+    .nav-links-container button {
+      border-bottom: 1px solid black;  /* Add line between menu items */
+      padding: 10px;
+      text-align: left;
+    }
+  
+    .nav-links-container button:last-child {
+      border-bottom: none;  /* Remove border for the last item */
+    }
+  
+    .menu-open .nav-links-container {
+      display: flex;
+    }
+  }
+  
+
+
+  /* Base styles for GridTable */
+/* Global Search and Filters */
+/* Global Search and Filters */
+.PaginationFlex{
+    margin:0 auto;
+    justify-content: right;
+    margin:20px 10%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Take up available space */
+    max-width: 400px; /* Max width for search input */
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .filters select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Learners Grid */
+  .learners-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width:80%;
+    max-width: 1100px; /* Optional: Limit the grid to a maximum width */
+    margin: 0 auto; /* Center the grid container */
+  }
+  
+  .learner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    border-radius:25px;
+    background-color: white;
+  }
+  
+  .learner-picture {
+    width: 100%;
+    height: auto;
+    max-width: 120px; /* Max width for images */
+    border-radius: 4px;
+  }
+  
+  /* Pagination and Items Per Page */
+  .pagination,
+  .learners-per-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding:0 4px;
+  }
+  
+  .learners-per-page {
+    align-items: center;
+  }
+  
+  .learners-per-page label {
+    margin-right: 10px;
+  }
+  
+  .pagination button {
+    padding:5px 10px;
+    background-color: white;
+    cursor: pointer;
+    margin: 4px 5px;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 10px; /* Adds space between the filters */
+  }
+  .Expertcount{
+    margin:30px 10% 10px 10%;
+  }
+  .Countnumber{
+    color:gray;
+  }
+  
+  .filters select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filters input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limit the width of the search input */
+  }
+  
+  .filters-left {
+    display: flex;
+    gap: 10px; /* Adds space between each filter */
+  }
+  
+  .filters-right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  
+  /* Responsive Layout */
+  .learnersGrid {
+    display: grid;
+    gap: 16px; /* Adjust the gap between items as needed */
+  }
+
+  .GridContainer{
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin:0 10%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+
+  }
+
+  
+
+  
+  @media (min-width: 1200px) {
+    .MainHomegrid{
+      display: grid;
+      gap: 20px 20px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+  }
+
+  @media (min-width: 1400px) {
+    .MainHomegrid{
+      display: grid;
+      gap: 20px 20px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+  }
+  
+  @media (min-width: 600px) and (max-width: 1199px) {
+    .MainHomegrid{
+      display: grid;
+      gap: 20px 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .GridContainer{
+      background-color: #f9f9f9;
+      padding: 0px;
+      margin:0 0%;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  
+    }
+
+
+    .navbar{
+      padding:5px 2%;
+    }
+
+    .navbar img{
+      display: none;
+    }
+  
+  }
+  
+  @media (max-width: 599px) {
+
+    .GridDefault{
+      width:96vw !important;
+    }
+    
+    .navbar{
+      padding:5px 2%;
+      justify-content: space-between;
+    }
+
+    .navbar img{
+      display: none;
+    }
+    .MainHomegrid{
+      display: 'grid';
+      gap: '20px 20px';
+      grid-template-columns: 'repeat(1, 1fr)';
+    }
+    .GridContainer{
+      padding: 0px !important;
+      margin:0% !important;
+      
+  
+    }
+    .filters{
+    flex-direction:column !important;
+    margin:0px !important;
+    align-items: normal !important;
+    }
+    .filtersLeft{
+      flex-direction:column !important;
+    }
+    .filtersRight{
+      flex-direction:column !important;
+      width: 96VW !important;
+    margin: 3px 2px !important;
+    }
+  
+  }
+
+
+  
